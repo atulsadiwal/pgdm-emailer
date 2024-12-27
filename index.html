@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGDM Program Emailer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        @keyframes blink-bg {
+            0% {
+                background-color: #d71a21;
+            }
+
+            50% {
+                background-color: #044ea2;
+            }
+
+            100% {
+                background-color: #d71a21;
+            }
+        }
+
+        .blinking-bg {
+            animation: blink-bg 1.5s infinite;
+        }
+
+        .blinking-bg:hover {
+            background-color: #044ea2;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee {
+            animation: marquee 10s linear infinite alternate;
+        }
+
+
+        .marquee-wrapper {
+            background-color: #ffdb56;
+            padding: 10px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+
+        /* Hexagonal clip-path for the shape */
+        .clip-hexagon {
+            clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <header class="bg-white pt-3 pb-5 flex justify-between items-center px-4">
+            <div class="flex-row w-full">
+                <div class="justify-center items-center py-3 bg-white rounded-lg">
+                    <div class="flex justify-center items-center">
+                        <img src="/image/logo.png" alt="Accurate Institute Logo" class="h-20 p-2 shadow-sm rounded-2xl">
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-3 text-center">
+                    <h3 class="text-3xl font-bold text-[#054da2] uppercase font-serif leading-snug tracking-wide">
+                        <span class="text-[#a41034]">PGDM</span> at Accurate:<br> Where Leadership Meets Excellence<br>
+                        <!-- <span
+                            class="bg-[url(/image/bacground-paper.png)] bg-[#054da2] text-white p-2 px-4 py-2 rounded mt-2 inline-block backdrop-blur-sm">
+                            PGDM Admission
+                        </span> -->
+                    </h3>
+                    <p class="font-medium text-[#a41034]">Empower your career with global exposure, dual
+                        specializations, 100%
+                        placement support,<br> and industry-aligned certifications for success!</p>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="bg-blue-50 text-center">
+            <div class="marquee-wrapper">
+                <h2 class="text-2xl font-bold text-[#a41034] .marquee-text ">
+                    <a href="" class="blink-animation">🎓 Admissions Open – Apply Now!</a>
+                </h2>
+            </div>
+
+            <style>
+                /* Define the blink animation */
+                @keyframes blink {
+                    50% {
+                        opacity: 0;
+                    }
+                }
+
+                /* Apply the animation to the a tag */
+                .blink-animation {
+                    animation: blink 0.8s step-start infinite;
+                }
+            </style>
+
+            <!-- <style>
+                @keyframes blink {
+                    0% {
+                        opacity: 1;
+                    }
+
+                    50% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                .blink-animation {
+                    animation: blink 10s infinite;
+                }
+
+                .blink-animation:hover {
+                    animation-play-state: paused;
+                }
+
+                .marquee-wrapper {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .marquee-text {
+                    display: inline-block;
+                    animation: marquee 10s linear infinite;
+                }
+
+                @keyframes marquee {
+                    0% {
+                        transform: translateX(100%);
+                    }
+
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                .marquee-text:hover {
+                    animation-play-state: paused;
+                }
+            </style> -->
+        </section>
+
+
+
+        <div class="w-full relative">
+            <img src="/image/banner-pgdm.jpg" alt="Graduation Celebration" class="w-full">
+        </div>
+
+        <section class="p-0 text-center">
+
+            <h2 class="text-3xl pt-8 font-bold text-[#a41034] text-center mb-10">Specializations Offered</h2>
+            <div class="bg-cover bg-center py-12 px-2 sm:px-10 lg:px-10"
+                style="background-image: url('/image/img.png'); opacity: 0.75;">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/80 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-bullhorn text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold  text-indigo-950">Marketing</h3>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">Finance</h3>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-chart-pie text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">Business Analytics</h3>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">International Business</h3>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-university text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">Banking and Financial Services</h3>
+                    </div>
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-user-tie text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">Human Resource Management</h3>
+                    </div>
+
+
+
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2]/90 shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#a41034] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-cogs text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-indigo-950">Operations & Supply Chain Management</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-[url(/image/background-paper.png)]">
+            <div class="py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-center text-3xl font-extrabold text-blue-800 sm:text-3xl mb-10">
+                        Value-Added Certification Programmes
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service 1 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-robot text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Artificial Intelligence</h3>
+                            </div>
+                        </div>
+                        <!-- Service 2 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-file-alt text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Advanced MS Office</h3>
+                            </div>
+                        </div>
+                        <!-- Service 3 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-bullhorn text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Digital Marketing</h3>
+                            </div>
+                        </div>
+                        <!-- Service 4 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-chart-pie text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">HR Analytics</h3>
+                            </div>
+                        </div>
+                        <!-- Service 5 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-brain text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Machine Learning</h3>
+                            </div>
+                        </div>
+                        <!-- Service 6 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-dolly text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">SCM Certificate</h3>
+                            </div>
+                        </div>
+                        <!-- Service 7 -->
+                        <div
+                            class="flex items-start space-x-4 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-chart-bar text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Business Analytics</h3>
+                            </div>
+                        </div>
+                        <!-- Service 8 -->
+                        <div
+                            class="flex items-start space-x-2 bg-white shadow-lg px-4 py-4 border-y-2 border-[#a41034]">
+                            <div class="flex-shrink-0">
+                                <div
+                                    class="flex items-center justify-center h-20 w-20 bg-yellow-400 clip-hexagon transition-all duration-300 hover:shadow-lg hover:scale-105">
+                                    <i class="fas fa-coins text-[#a41034] text-2xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-[#a41034]">Capital Market & Financial Planning</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="relative px-6 py-12 bg-center rounded-lg shadow-md bg-[url(/image/background-paper.png)] bg-[#0071bc]/90">
+
+            <div class="bg-white py-6 px-4 sm:px-10 lg:px-10">
+                <h2 class="text-2xl font-bold text-blue-900 text-center mb-10">Program Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- 100% Placement Assistance -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-lg p-6 rounded-xl border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-user-tie text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">100% Placement Assistance</h3>
+                        <p class="text-gray-700">Guaranteed career support.</p>
+                    </div>
+
+                    <!-- Live Projects & Internships -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Live Projects & Internships</h3>
+                        <p class="text-gray-700">Hands-on experience with industry projects.</p>
+                    </div>
+
+                    <!-- Value-Added Certifications -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-certificate text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Value-Added Certifications</h3>
+                        <p class="text-gray-700">Boost your profile with certifications like Machine Learning, SCM, and
+                            more.</p>
+                    </div>
+
+                    <!-- Dual Specializations -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-layer-group text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Dual Specializations</h3>
+                        <p class="text-gray-700">Maximize career opportunities with expertise in two fields.</p>
+                    </div>
+
+                    <!-- Global Perspective -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Global Perspective</h3>
+                        <p class="text-gray-700">Participate in International Study Tours for cultural and professional
+                            growth.</p>
+                    </div>
+
+                    <!-- Soft Skills & Personality Development -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Soft Skills & Personality Development</h3>
+                        <p class="text-gray-700">Prepare for leadership roles with enhanced communication skills.</p>
+                    </div>
+
+                    <!-- Industrial Visits -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-building text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Industrial Visits & Corporate Connects</h3>
+                        <p class="text-gray-700">Engage directly with the corporate world through industry visits.</p>
+                    </div>
+
+                    <!-- Scholarships -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-hand-holding-usd text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Scholarships up to ₹1 Lakh</h3>
+                        <p class="text-gray-700">Support for meritorious students to achieve their dreams.</p>
+                    </div>
+
+                    <!-- Hostel & Transport Facilities -->
+                    <div
+                        class="flex flex-col items-center text-center bg-[#f2f2f2] shadow-md p-6 rounded-lg border-x border-y">
+                        <div
+                            class="bg-[#0071bc] text-white w-16 h-16 flex items-center justify-center rounded-full mb-4">
+                            <i class="fas fa-home text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">On-Campus Hostel & Transport Facilities</h3>
+                        <p class="text-gray-700">Comfortable and secure accommodation for students.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-blue-50 pb-6 .py-12 text-center">
+            <div class="marquee-wrapper">
+                <h2 class="text-2xl font-bold text-blue-900 marquee-text">
+                    <a href="">🔗 Explore the PGDM Program</a> | <a href="">🎓 Admissions Open – Apply Now!</a>
+                </h2>
+            </div>
+
+            <a href="https://www.accurate.in/admission/management/index.php" target="_blank"
+                class="mt-6 inline-block bg-blue-900 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-700 text-lg font-semibold blinking-bg">
+                Apply Today
+            </a>
+
+        </section>
+
+        <!-- New Section: Why Choose Our PGDM Program -->
+        <section class="bg-blue-100 py-12" style="background-image: url('/image/bg.webp');">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-white text-center mb-8">Scope of the PGDM Program</h2>
+                <p class="text-white"><span class="font-bold">PGDM (Post Graduate Diploma in Management)</span> is a
+                    2-year full-time
+                    program equivalent to an MBA.
+                    The curriculum covers Marketing, Finance, Human Resources, IT, Operations Management, Strategy, and
+                    Business Policy, providing a comprehensive education in all aspects of management.
+                    With an industry-aligned curriculum, this program prepares you for leadership roles, equipping you
+                    with the tools to excel in a dynamic global market.
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="bg-[#192f6f] text-white p-6">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+                <!-- Contact Information -->
+                <div
+                    class="flex flex-col md:flex-row items-center justify-center text-center md:text-left space-y-4 md:space-y-0 md:space-x-6">
+                    <p class="text-xl flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fa-solid fa-phone text-white h-8 w-8 flex items-center justify-center"></i>
+                        <span>+91 9560148370</span>
+                    </p>
+                    <p class="text-xl flex items-center justify-center md:justify-start space-x-2">
+                        <i class="fa-solid fa-globe text-white h-8 w-8 flex items-center justify-center"></i>
+                        <a href="https://www.accurate.in" class="hover:underline">www.accurate.in</a>
+                    </p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="https://www.facebook.com" target="_blank"
+                        class="bg-white p-2 rounded-full shadow-md border-2 border-gray-300 hover:text-blue-800 hover:bg-blue-50 transition duration-200 flex justify-center items-center w-10 h-10">
+                        <i class="fab fa-facebook-f text-lg text-blue-600"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank"
+                        class="bg-white p-2 rounded-full shadow-md border-2 border-gray-300 hover:text-pink-800 hover:bg-pink-50 transition duration-200 flex justify-center items-center w-10 h-10">
+                        <i class="fab fa-instagram text-lg text-pink-600"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank"
+                        class="bg-white p-2 rounded-full shadow-md border-2 border-gray-300 hover:text-blue-900 hover:bg-blue-50 transition duration-200 flex justify-center items-center w-10 h-10">
+                        <i class="fab fa-linkedin-in text-lg text-blue-700"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Footer Copyright -->
+            <p class="text-center text-sm mt-6">© 2024 Accurate Group of Institutions. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
